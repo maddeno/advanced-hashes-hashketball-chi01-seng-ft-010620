@@ -151,10 +151,10 @@ end
 
 
 def team_colors(team_name)
-  colors = nil 
+  colors = []
   game_hash.each do |team|
     if team[:team_name] == team_name
-      team[:colors].map
+      colors.push(team[:colors])
     end
   end
   colors
