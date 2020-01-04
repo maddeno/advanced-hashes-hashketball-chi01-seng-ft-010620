@@ -126,7 +126,7 @@ def game_hash
 end
 
 def num_points_scored(player_name)
-  player_names_array = game_hash[:home][:players][:player_name] + game_hash[:away][:players][:player_name]
+  players_array = game_hash[:home][:players] + game_hash[:away][:players]
   puts player_names_array
 end
 
