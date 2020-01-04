@@ -151,11 +151,12 @@ end
 
 
 def team_colors(team_name)
-  colors = nil 
-  game_hash.each do |team|
-    if team[:team_name] == team_name
-      colors = team[:colors]
+  index = 0 
+  while index < game_hash.size do
+    if game_hash[index][:team_name] == team_name
+      colors = game_hash[index][:colors]
     end
+    index += 1 
   end
   colors
 end
