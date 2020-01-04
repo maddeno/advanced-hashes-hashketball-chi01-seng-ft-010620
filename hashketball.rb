@@ -209,7 +209,16 @@ end
 
 
 def most_points_scored
-  
+  high_score = 0 
+  highest_scoring_player = ""
+  players_array = game_hash[:home][:players] + game_hash[:away][:players]
+  players_array.each do |player|
+    if player[:points] > high_score
+      high_score = player[:points]
+      highest_scoring_player = player[:player_name]
+    end
+  end
+  highest_scoring_player
 end
 
 
@@ -219,6 +228,11 @@ end
 
 
 def player_with_longest_name
+  
+end
+
+
+def long_name_steals_a_ton?
   
 end
 
