@@ -125,6 +125,7 @@ def game_hash
   }
 end
 
+
 def num_points_scored(player_name)
   points = 0 
   players_array = game_hash[:home][:players] + game_hash[:away][:players]
@@ -135,6 +136,7 @@ def num_points_scored(player_name)
   end
   points
 end
+
 
 def shoe_size(player_name)
   player_shoe_size = 0 
@@ -148,6 +150,14 @@ def shoe_size(player_name)
 end
 
 
+def team_colors(team_name)
+  game_hash.each do |team|
+    if team[:team_name] == team_name
+      colors = team[:colors]
+    end
+  end
+  colors
+end
 
 
 
