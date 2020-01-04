@@ -162,8 +162,9 @@ end
 
 
 def team_names
-  game_hash.map {
-  
+  game_hash.map do |teams|
+   teams[:team_name] 
+  end
 end
 
 
