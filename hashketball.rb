@@ -175,6 +175,7 @@ def player_numbers(team_name)
      current_players = team[:players]
    end
   end
+  puts current_players
 end
 
 
