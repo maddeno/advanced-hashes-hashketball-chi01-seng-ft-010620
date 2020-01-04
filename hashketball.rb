@@ -165,6 +165,7 @@ def team_names
   game_hash.map do |teams|
    teams[team_name] 
   end
+  team_names
 end
 
 
