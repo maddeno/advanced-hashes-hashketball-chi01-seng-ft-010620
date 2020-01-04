@@ -126,10 +126,11 @@ def game_hash
 end
 
 def num_points_scored(player_name)
+  points = 0 
   players_array = game_hash[:home][:players] + game_hash[:away][:players]
   players_array.each do |name|
-    if players_array[:player_name] == player_name
-      points = players_array[:points]
+    if name == player_name
+      
     end
   end
   points
