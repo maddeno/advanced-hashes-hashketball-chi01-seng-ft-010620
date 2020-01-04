@@ -264,7 +264,17 @@ def long_name_steals_a_ton?
     end
   end
   current_most_steals = 0 
-  thieving_player
+  thieving_player = ""
+  players_array.each do |player|
+    if player[:steals] > current_most_steals
+      current_most_steals = player[:steals]
+      thieving_player = player[:player_name]
+    end
+  end
+  if longest_player == thieving_player
+    return true 
+  else
+    return false 
 end
 
 
