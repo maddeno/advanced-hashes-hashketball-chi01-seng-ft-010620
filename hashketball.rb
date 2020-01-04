@@ -173,9 +173,17 @@ def player_numbers(team_name)
   game_hash.each do |location, team|
     if team[:team_name] == team_name
      current_players = team[:players]
+     new_array = current_players.map do |numbers|
+       current_players[:number]
+     end
    end
   end
-  puts current_players
+  new_array
+end
+
+
+def player_stats
+  
 end
 
 
