@@ -254,7 +254,17 @@ end
 
 
 def long_name_steals_a_ton?
-  
+  current_longest_name = 0 
+  longest_player = ""
+  players_array = game_hash[:home][:players] + game_hash[:away][:players]
+  players_array.each do |player|
+    if player[:player_name].length > current_longest_name
+      current_longest_name = player[:player_name].length
+      longest_player = player[:player_name]
+    end
+  end
+  current_most_steals = 0 
+  thieving_player
 end
 
 
