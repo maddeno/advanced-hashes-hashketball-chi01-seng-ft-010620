@@ -179,6 +179,7 @@ def player_numbers(team_name)
         index += 1
       end
     end
+  end
 end
 
 
