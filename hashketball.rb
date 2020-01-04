@@ -188,9 +188,9 @@ def player_stats(player_name)
   players_array.each do |player|
     if player[:player_name] == player_name
       player.delete(:player_name)
+      return player
     end
   end
-  player
 end
 
 
