@@ -183,8 +183,13 @@ def player_numbers(team_name)
 end
 
 
-def player_stats
-  
+def player_stats(player_name)
+  players_array = game_hash[:home][:players] + game_hash[:away][:players]
+  players_array.each do |player|
+    if player[:player_name] == player_name
+      return player
+    end
+  end
 end
 
 
