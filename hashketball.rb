@@ -162,8 +162,8 @@ end
 
 
 def team_names
-  new_array = game_hash.map do |teams|
-   teams[:team_name] 
+  new_array = game_hash.map do |location, team|
+   team[:team_name] 
   end
   new_array
 end
