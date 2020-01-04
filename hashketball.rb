@@ -174,7 +174,7 @@ def player_numbers(team_name)
     if team[:team_name] == team_name
      current_players = team[:players]
      new_array = current_players.map do |numbers|
-       current_players[:number]
+       current_players[:number].sort
      end
    end
   end
